@@ -92,10 +92,11 @@ def narcissistic(value):
         n = 0
         while i < len(nums) and n < (len(nums))-1:
             for num in nums:
-                print(f'num = {num}, nums num = {nums[n]}, added together = {num + nums[n]}')
-                # print(f'nums num = {nums[n]}')
-                # print(f'added tog')
-                print(f'n = {n}')
+                if num != nums[n] and (num + nums[n] < value):
+                    # print(f'nums i = {nums[i]}')
+                    print(f'num = {num}, nums num = {nums[n]}, added together = {num + nums[n]}')
+                    print(f'n = {n}')
+
             n += 1
         i += 1
         
